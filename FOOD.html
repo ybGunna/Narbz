@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>MajorPT</title>
+		<meta name="viewport" content="width=device-widthinitial-scale=1.0">
+			<style>
+			.container {
+	display:grid;
+	grid-template-columns:1fr 3fr 1fr;
+	grid-template-rows:100px 500px 100px;
+	}
+	
+	.header {
+	background:blue;
+	font-size:2em;
+	text-align:center;
+	grid-column:span 3;
+	}
+	.nav {
+	background:lightblue;
+	font-size:2em;
+	text-align:center;
+	}
+	.content {
+	background:yellow;
+	font-size:2em;
+	text-align:center;
+	}
+	.aside {
+	background:orange;
+	font-size:2em;
+	text-align:center;
+	}
+	.footer {
+	background:maroon;
+	font-size:2em;
+	text-align:center;
+	grid-column:span 3;
+	}
+
+	@media only screen and (max-width:600px) {
+			.container {
+				display:grid;
+				grid-template-columns:1fr 3fr;
+				grid-template-rows:1fr 3fr 1fr 1fr;
+				
+			}
+				.content {
+			background:white;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 2
+				}
+				.aside {
+				background:brown;
+				font-size:2em;
+				text-align:center;
+				grid-column:span 3
+				}
+		}
+	@media only screen and (max-width:300px) {
+			.container {
+				display:grid;
+				grid-template-columns:1fr;
+				grid-template-rows:1fr 1fr 3fr 1fr 1fr;
+				
+			}
+				.content {
+			background:white;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 3
+				}
+		}
+</style>
+	</head>
+<body>
+
+<div class=container>
+	<div class=header>MAJORPT_NARBOADA</div>
+	<div class=nav>
+		<a href="index.html">ABOUT ME</a><br>
+		<a href="FOOD.html">MY FAVORITE FOODS</a><br>
+		<a href="TALENTS.html">MY TALENTS</a><br>
+		<a href="SPORTS.html">MY SPORT</a>
+	</div>
+	<div class=content>
+        <img src="carbonara.jpg" style="width:300px;height:300px">
+		<p>My favorite food is carbonara I love this food because of so much cheese and mostly cheese I just
+		love the cheesy and creamy flavor.
+        </p>
+    </div>
+	<div class=aside>
+        <img src="yummy.jpg" style="width:300px;height:300px">
+    </div>
+	<div class=footer>GIMME CARBONARA</div>
+</div>
+</body>
+</html>
